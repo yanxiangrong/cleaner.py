@@ -128,7 +128,12 @@ def main():
         else:
             print(f'Delete the following files except the {opt.min_files} most recently touched ([Y]es/[N]o)?')
         print_files(files)
-        confirm = input()
+
+        confirm = ''
+        try:
+            confirm = input()
+        except KeyboardInterrupt:
+            pass
         if confirm in ['y', 'Y', 'yes', 'YES', 'Yes']:
             deleted = remove_files(files)
             print(f"Removed {deleted} file{'s' if deleted > 1 else ''}.")
