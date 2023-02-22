@@ -1,8 +1,8 @@
-# clear.py
+# cleaner.py
 
 ```
-$ ./clear.py -h
-usage: clear.py [-h] [-q] [-s PATTERN] [-m MINIMUM] [-d DIRECTORY]
+$ ./cleaner.py -h
+usage: cleaner.py [-h] [-q] [-s PATTERN] [-m MINIMUM] [-d DIRECTORY]
 
 This script cleans directories. It is useful for backup and log file directories, when you want to delete older files.
 
@@ -19,12 +19,12 @@ options:
 example:
   In the current directory, delete everything but the 5 most recently touched 
   files: 
-      cleaner.sh
+      cleaner.py
   Same as:
-      clear.py -s '*' -m 5 -d .
+      cleaner.py -s '*' -m 5 -d .
   In the /home/myUser directory, delete all files including text "test", 
   except the most recent:
-      clear.py -s test -m 1 -d /home/myUser
+      cleaner.py -s test -m 1 -d /home/myUser
   Don't ask for any confirmation:
-      clear.py -s test -m 1 -d /home/myUser -q
+      cleaner.py -s test -m 1 -d /home/myUser -q
 ```
