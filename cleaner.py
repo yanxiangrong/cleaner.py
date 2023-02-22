@@ -35,7 +35,7 @@ def get_option() -> Option:
 example:
   In the current directory, delete everything but the 5 most recently touched 
   files: 
-      cleaner.sh
+      {prog}
   Same as:
       {prog} -s '*' -m 5 -d .
   In the /home/myUser directory, delete all files including text "test", 
