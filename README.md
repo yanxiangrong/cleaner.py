@@ -4,15 +4,19 @@
 $ ./cleaner.py -h
 usage: cleaner.py [-h] [-q] [-s PATTERN] [-m MINIMUM] [-d DIRECTORY]
 
-This script cleans directories. It is useful for backup and log file directories, when you want to delete older files.
+This script cleans directories. It is useful for backup and log file directories, 
+when you want to delete older files.
 
 options:
   -h, --help            show this help message and exit
-  -q, --quiet           This script defaults to verbose, use -q to turn off messages (Useful when using the cleaner.sh in automated scripts).
+  -q, --quiet           This script defaults to verbose, use -q to turn off messages 
+                        (Useful when using the cleaner.sh in automated scripts).
   -s PATTERN, --search PATTERN
-                        A search string to limit file deletion, defaults to '*' (All files).
+                        A search string to limit file deletion, 
+                        defaults to '*' (All files).
   -m MINIMUM, --minimum MINIMUM
-                        The minimum number of files required in the directory (Files to be maintained), defaults to 5.
+                        The minimum number of files required in the directory 
+                        (Files to be maintained), defaults to 5.
   -d DIRECTORY, --directory DIRECTORY
                         The directory to clean, defaults to the current directory.
 
